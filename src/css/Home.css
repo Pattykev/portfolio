@@ -1,0 +1,33 @@
+Copy
+
+.my-background-image {
+    position: relative;
+    width: 100%;
+    height: 100vh; /* ou une autre hauteur selon vos besoins */
+    overflow: hidden;
+}
+
+.my-background-image::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('../assets//background.png'); /* Remplacez par le chemin de votre image */
+    background-size: 70%;
+    background-position: center;
+    background-attachment: fixed; /* Fixe l'image lors du défilement */
+    background-repeat: no-repeat;
+    opacity: 0.25; /* Ajustez l'opacité selon vos besoins */
+    z-index: 1; /* Assurez-vous que cet élément est derrière le texte */
+}
+
+.my-content {
+    position: relative;
+    margin-top: 200px;
+    z-index: 2; /* Assurez-vous que le texte est au-dessus de l'image de fond */
+    color: black; /* Ajustez la couleur du texte selon vos besoins */
+    padding: 20px; /* Ajoutez du padding si nécessaire */
+    text-align: center;
+}

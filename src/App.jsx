@@ -8,19 +8,14 @@ import Projects from "./components/Projects";
 import Services from "./components/Services";
 import Error from "./components/Error";
 import Navbar from "./components/Navbar";
-
+import "./tailwind.css";
 
 
 function App() {
-  
-
   return (
-    
     <>
-      
       <Router>
         <Navbar />
-        
           <Routes>
             <Route path='/' element={<Home/>} />
             <Route path='/about' element={<About/>} />
