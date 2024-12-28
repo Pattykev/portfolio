@@ -1,3 +1,70 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+body {
+    @apply bg-gradient-to-r from-indigo-500 from-15% via-sky-500 via-35% to-emerald-500 to-75% h-64 w-full text-white font-bold py-2 px-4 rounded;
+    font-family: Arial, sans-serif; /* Police de base */
+    font-size: 18px; /* Taille de police par défaut */
+    line-height: 1.6; /* Hauteur de ligne */
+    color: #c8dde7;; /* Couleur du texte */
+    margin: 0px; /* Marges par défaut */
+    padding: 50px 80px; /* Espacement interne */
+}
+
+/* Styles pour les titres */
+h1 {
+    font-size: 2.5em; /* Taille du titre principal */
+    color: #f0f2f3; /* Couleur du titre principal */
+    text-align: center;
+    
+}
+
+h2 {
+    font-size: 2em; /* Taille du sous-titre */
+    color:#f0f2f3; /* Couleur du sous-titre */
+    margin: auto; /* Espacement en dessous */
+    text-align: center;
+}
+
+h3 {
+    font-size: 1.5em; /* Taille du sous-sous-titre */
+    color: #f0f2f3; /* Couleur du sous-sous-titre */
+    margin-bottom: 10px; /* Espacement en dessous */
+    text-align: center;
+}
+
+/* Styles pour le texte par défaut */
+p {
+    margin-bottom: 15px; /* Espacement entre les paragraphes */
+    padding: 20px 20px;
+    margin-top: 30px;
+    text-align: center;
+    justify-content: center;
+}
+
+/* Styles pour les liens */
+a {
+    color: #084872; /* Couleur des liens */
+    text-decoration: none; /* Pas de soulignement */
+    text-align: center;
+    padding: auto;
+}
+a:hover{
+    font-weight: bold;
+    color: black;
+
+}
+
+
+
+button{
+    border-radius: 20px;
+    border-color: black;
+    background-color: white;
+    padding: 10px;
+    display: block;
+    margin: 10px auto; /* Centre horizontalement */
+}
+
+

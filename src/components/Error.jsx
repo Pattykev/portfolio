@@ -2,7 +2,7 @@ import React from "react";
 
 function Error(){
     return(
-        <div>
+        <div className="background-color"> 
             Ooops! Page not found. Check your Url.
         </div>
     );

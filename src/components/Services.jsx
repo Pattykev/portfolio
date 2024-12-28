@@ -2,7 +2,7 @@ import React from "react";
 
 function Services() {
     return(
-        <>
+        <div> 
             <h1>The services i provide</h1>
             <p> J'offre des services a la fois dans le domaine technologique mais aussi dans le domaine cosmetique notamment des prestations dans le domaine capillaire.
                 Je vous garantie donc:
@@ -14,7 +14,7 @@ function Services() {
                 <li>Des conseils en marketing digital pour relancer ou lancer votre business</li>
                 <li>Des astuces pour l'entretien de vos cheveux a l'etat naturel</li>
             </ul>
-        </>
+        </div>
     );
 }
 

@@ -19,7 +19,7 @@ Copy
     background-position: center;
     background-attachment: fixed; /* Fixe l'image lors du défilement */
     background-repeat: no-repeat;
-    opacity: 0.25; /* Ajustez l'opacité selon vos besoins */
+    /* opacity: 0.25; Ajustez l'opacité selon vos besoins */
     z-index: 1; /* Assurez-vous que cet élément est derrière le texte */
 }
 

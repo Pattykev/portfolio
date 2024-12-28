@@ -8,33 +8,28 @@ import { Link } from "react-router-dom";
 
 function Home() {
     return(
-      <> 
-    <div className="my-background-image"  >
-      <div className="my-content" >
-        <h1> 
-          Hey! Je suis Patricia TCHINGUE, tu peux aussi m'appeler Patty.
+  
+   <div className="max-h-screen overflow-y-auto mt-15"> 
+        <h1 > 
+          Hey! Je suis Patricia TCHINGUE,
+          tu peux aussi m'appeler Patty.
         </h1>
         <p>
           Je suis Developpeuse Frontend et ambassadrice du mouvement Nappy.
         </p>
+        <div className="btn-container">
         <button><Link to="project">Voir mes projets</Link></button>
         &nbsp; &nbsp;
         <button><Link to="about">En savoir plus</Link> </button>
-      </div>
+        </div>
+  
+        {/* <Projects /> */}
+        {/* <Services /> */}
+        {/* <Blog /> */}
+        {/* <Contact /> */}
 
-        <Projects />
-        <br />
-        <Services />
-        <br />
-        <Blog />
-        <br />
-        <Contact />
-
-    </div>
-
-
-      </>
+</div>
+      
     );
 }
-import  "../css/Home.css";
 export default Home;
