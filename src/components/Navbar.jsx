@@ -9,37 +9,28 @@ const Navbar = () => {
     setIsOpen(!isOpen);
   };
     return (
-    <nav className="fixed top-0 left-0 w-full p-4 ">
-        <div className="container mx-auto py-4  bg-transparent border-2 border-indigo-600 flex justify-center shadow w-2/5 rounded-full">
-        <button 
-          className="md:hidden text-white focus:outline-none justify-left" 
-          onClick={toggleMenu}
-        >
-          <svg 
-            className="w-6 h-6" 
-            fill="none" 
-            stroke="currentColor" 
-            viewBox="0 0 24 24" 
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            {isOpen ? (
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M6 18L18 6M6 6l12 12" />
-            ) : (
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16m-7 6h7" />
-            )}
-          </svg>
-        </button>
+      <nav className="  flex fixed top-0 left-0 w-full p-4 ">
+        <div className=" container justify-center mx-auto py-4 border-2 border-indigo-600 flex  shadow w-2/5 rounded-full">
+          
+
         <div className={`md:flex ${isOpen ? 'block' : 'hidden'}`} >
-            <ul className="flex space-x-6 ">
-                <li ><Link className="text-black   hover:text-white" to="/">Home</Link></li>
-                <li ><Link className="text-black   hover:text-white" to="/about">About</Link></li>
-                <li ><Link className="text-black   hover:text-white" to="/blog">Blog</Link></li>
-                <li ><Link className="text-black   hover:text-white" to="/contact">Contact</Link></li>
-                <li ><Link className="text-black   hover:text-white" to="/project">Project</Link></li>
-                <li><Link className="text-black   hover:text-white" to="/service">Service</Link></li>
+            <ul className="flex space-x-8" >
+                <li ><Link className="text-black   hover:text-indigo-600" to="/">Home</Link></li>
+                <li ><Link className="text-black   hover:text-indigo-600" to="/about">About</Link></li>
+                <li ><Link className="text-black   hover:text-indigo-600" to="/project">Project</Link></li>
+                <li ><Link className="text-black   hover:text-indigo-600" to="/blog">Blog</Link></li>
+                <li ><Link className="text-black   hover:text-indigo-600" to="/contact">Contact</Link></li>
             </ul>
             </div> 
+
+           
         </div>
+        <div className=" border-indigo-600 mr-20">
+            <span aria-label="Full Moon" role="img">🌕</span>
+              .
+              .
+               <span  aria-label="New Moon" role="img">🌑</span>
+            </div>
     </nav>
     );
 }

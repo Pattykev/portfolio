@@ -8,12 +8,13 @@ import Projects from "./components/Projects";
 import Services from "./components/Services";
 import Error from "./components/Error";
 import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
 import "./tailwind.css";
 
 
 function App() {
   return (
-   
+    <> 
       <Router>
         <Navbar />
           <Routes>
@@ -25,8 +26,9 @@ function App() {
             <Route path='/service' element={<Services/>} />
             <Route path='*' element={<Error/>} />
           </Routes>
-        
       </Router>
+      <Footer />
+    </>
       
   )
 }
