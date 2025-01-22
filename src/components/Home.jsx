@@ -1,7 +1,6 @@
 import React from "react";
-import img from "/home/patricia/Desktop/TMPK-Image/portfolio/src/assets/profile-top.png";
+import img from "/src/assets/profile-top.png";
 import { FaGithub, FaHandshake, FaLinkedin, FaTwitter,FaFolder} from "react-icons/fa";
-import {  IconContext} from "react-icons";
 
 
 function Home() {

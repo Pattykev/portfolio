@@ -1,5 +1,5 @@
 import React from "react";
-import imageSource from "/home/patricia/Desktop/TMPK-Image/portfolio/src/assets/profile-top.png";
+import imageSource from "/src/assets/profile-top.png";
 
 function About() {
 	const imageStyle={
