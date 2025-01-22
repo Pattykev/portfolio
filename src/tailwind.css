@@ -9,11 +9,11 @@
     src: url('./assets/fonts/young-serif/YoungSerif-Regular.ttf');
 }
 
-body {
+body main{
     
-    font-family: 'outfit', 'young-serif'; /* Police de base */
+    font-family:  'young-serif'; /* Police de base */
     line-height: 1.6; /* Hauteur de ligne */
-    margin-top: 8rem; /* Marges par défaut */
+    margin-top: 4rem; /* Marges par défaut */
     padding: 2rem 5rem; /* Espacement interne */
 }
 

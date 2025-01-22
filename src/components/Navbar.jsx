@@ -9,7 +9,7 @@ const Navbar = () => {
     setIsOpen(!isOpen);
   };
     return (
-      <nav className="  flex fixed top-0 left-0 w-full p-4 ">
+      <nav className="flex -mt-1 top-0 left-0 w-full p-4 ">
         <div className=" container justify-center mx-auto py-4 border-2 border-indigo-600 flex  shadow w-2/5 rounded-full">
           
 
@@ -18,7 +18,7 @@ const Navbar = () => {
                 <li ><Link className="text-black   hover:text-indigo-600" to="/">Home</Link></li>
                 <li ><Link className="text-black   hover:text-indigo-600" to="/about">About</Link></li>
                 <li ><Link className="text-black   hover:text-indigo-600" to="/project">Project</Link></li>
-                <li ><Link className="text-black   hover:text-indigo-600" to="/blog">Blog</Link></li>
+                <li ><Link className="text-black   hover:text-indigo-600" to="/Articles">Articles</Link></li>
                 <li ><Link className="text-black   hover:text-indigo-600" to="/contact">Contact</Link></li>
             </ul>
             </div> 
