@@ -1,55 +1,54 @@
 import React from "react";
 import imageSource from "/src/assets/profile-top.png";
+import { FaCss3, FaHtml5, FaJs, FaNodeJs, FaReact, FaStar, FaJava, FaAngular, FaFire, FaLaptop, FaHandHolding, FaNetworkWired, FaPhone, FaGlasses} from "react-icons/fa";
 
 function About() {
 	const imageStyle={
-		"transform": "rotate(3deg)"
+		"margin":"5rem 4rem"
 	}
 	return(
 		< > 
-		<main>
-      	<div className="grid grid-rows-1 grid-flow-col gap-4 ml-10"  > 
-				<img src={imageSource} alt="Patricia's image" style={imageStyle} className=" rounded-full" />
-            <div className="mr-20 mt-25 text-pretty">
-					<h1 className="p-8 text-center text-[24px]">Patricia Kevine TCHINGUE MAKAMTE, FullStack Developer, Nappy Ambassador</h1>
-            		<p className="text-gray-600">
-						🌟 À la croisée des chemins entre technologie et créativité, je suis une jeune femme passionnée qui incarne l'esprit d'innovation. Développeuse d'application de métier, je transforme des lignes de code en solutions élégantes qui simplifient le quotidien.
+		<main style={imageStyle} className="justify-center">
+      	<div className="grid grid-rows-1 grid-flow-col gap-4 justify-center"  > 
+				<img src={imageSource} alt="Patricia's image" className=" rounded-full" />
+            <div className="w-190 mt-25 text-justify">
+					<h1 className="p-8 text-center text-[28px]">Patricia Kevine TCHINGUE MAKAMTE, FullStack Developer, Nappy Ambassador</h1>
+            		<p className="text-gray-600 ml-10">
+						🌟 At the crossroads between technology and creativity, I am a passionate young woman who embodies the spirit of innovation. An application developer by trade, I transform lines of code into elegant solutions that simplify everyday life.
 						<br/>
-						💄 Ambassadrice d'un mouvement qui valorise l'entrepreneuriat féminin, je concoie ma propre ligne de cosmétiques, alliant beauté et éthique. Mon parcours est un reflet de ma polyvalence : toujours curieuse, je plonge avec enthousiasme dans chaque projet, cherchant à apprendre et à m'améliorer.
+						💄 Ambassador of a movement that values ​​female entrepreneurship, I design my own line of cosmetics, combining beauty and ethics. My career is a reflection of my versatility: always curious, I enthusiastically dive into each project, seeking to learn and improve.
 						<br/>
-						🚀 Travailleuse acharnée, je crois fermement que la passion et l'engagement sont les clés du succès. Mon objectif ? Inspirer les autres à embrasser leur potentiel et à ne jamais cesser d'explorer. Que ce soit au cœur du code ou dans l'art de la cosmétique, je suis déterminée à laisser ma marque.
+						🚀 A hard worker, I firmly believe that passion and commitment are the keys to success. My goal? To inspire others to embrace their potential and never stop exploring. Whether in the heart of coding or in the art of cosmetics, I am determined to leave my mark.
 					</p>
-					<p className="text-gray-600"> If you want to know more about download mu CV here:</p>
 					<a href="../assets/TCHINGUE MAKAMTE Patricia Kevine.pdf" download="CV-Patricia TCHINGUE.pdf" target="blank">
-    					<button type="button">Telecharger mon CV</button>
+    					<button className="p-2 w-2/5 bg-teal-800 text-white hover:bg-teal-600 mt-8" >Download Resume</button>
 					</a>
 					<div >
-    					<h1 className="p-8 text-center text-[24px]">Programming languages and frameworks</h1>
-    					<div className="bg-gray-400 grid grid-rows-2 grid-flow-col gap-4 text-gray-800 rounded-lg p-8 mb-8"> 
-        					<span>JavaScript</span>
-        					<span>TypeScript</span>
-        					<span>Java</span>
-        					<span>CSS3</span>
-        					<span>HTML</span>
-        					<span>React JS</span>
-        					<span>Angular</span>
-        					<span>Node JS</span>
-        					<span>SQL</span>
-        					<span>No SQL</span>
+    					<h1 className="p-8 text-center text-[28px]">Programming languages and frameworks</h1>
+    					<div className=" text-center bg-gray-200 grid grid-rows-2 grid-flow-col gap-4 text-gray-800 rounded-lg p-8"> 
+        					<span><FaJs className="inline-flex mr-4" color="teal" size={18}/>JavaScript</span>
+        					<span><FaStar className="inline-flex mr-4" color="teal" size={18} />TypeScript</span>
+        					<span><FaJava className="inline-flex mr-4" color="teal" size={18}/>Java</span>
+        					<span><FaCss3 className="inline-flex mr-4" color="teal"  size={18}/>CSS3</span>
+        					<span><FaHtml5 className="inline-flex mr-4" color="teal" size={18} />HTML</span>
+        					<span><FaReact className="inline-flex mr-4" color="teal" size={18} />React JS</span>
+        					<span><FaAngular className="inline-flex mr-4" color="teal" size={18} />Angular</span>
+        					<span><FaNodeJs className="inline-flex mr-4" color="teal" size={18} />Node JS</span>
+        					<span><FaStar className="inline-flex mr-4" color="teal" size={18} />SQL</span>
+        					<span><FaStar className="inline-flex mr-4" color="teal" size={18}/>No SQL</span>
     					</div>
 					</div>
 
 					<div >
-    					<h1 className="p-8 text-center text-[24px]">Services</h1>
-    					<div className="bg-gray-400 grid grid-rows-4 grid-flow-col gap-4 text-gray-800 rounded-lg p-8">
-        					<span>Developpement de site web(biographie familliale, entreprise, portfolio)</span>
-        					<span>Develeppement d'application web complete pour automatiser la gestion de votre boite</span>
-        					<span>Collaboration sur des projets</span>
-        					<span>Design User Interface</span>
-        					<span>Realisation de vos interfaces d'application</span>
-        					<span>Conception et realisation de vos API securisees</span>
-        					<span>Conseil d'entretien Capillaire pour cheveux Afro</span>
-        					<span>Brand Ambassador de marque cosmetique capillaire pour cheveux Afro</span>
+    					<h1 className="p-8 text-center text-[28px]">Services</h1>
+    					<div className=" bg-gray-200 grid grid-rows-4 grid-flow-col gap-10 text-gray-800 rounded-lg p-8">
+        					<span> <FaFire className="inline-flex mr-4" color="orange" size={18}/>Website development (family biography, business, portfolio)</span>
+        					<span> <FaLaptop className="inline-flex mr-4" color="orange" size={18}/> Complete web application development to automate the management of your box</span>
+        					<span> <FaHandHolding className="inline-flex mr-4" color="orange" size={18}/> Collaboration on projects</span>
+        					<span> <FaPhone className="inline-flex mr-4" color="orange" size={18}/> User Interface Design</span>
+        					<span> <FaNetworkWired className="inline-flex mr-4" color="orange" size={18}/> Design and creation of your secure APIs</span>
+        					<span> <FaStar className="inline-flex mr-4" color="orange" size={18}/> Hair care advice for Afro hair</span>
+        					<span> <FaGlasses className="inline-flex mr-4" color="orange" size={18}/> Brand Ambassador of hair cosmetic brand for Afro hair</span>
     					</div>
 					</div>
 

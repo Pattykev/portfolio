@@ -5,7 +5,6 @@ import Home from "./components/Home";
 import Articles from "./components/Articles";
 import Contact from "./components/Contact";
 import Projects from "./components/Projects";
-import Services from "./components/Services";
 import Error from "./components/Error";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
@@ -20,10 +19,9 @@ function App() {
           <Routes>
             <Route path='/' element={<Home/>} />
             <Route path='/about' element={<About/>} />
-            <Route path='/articles' element={<Articles/>} />
+            {/* <Route path='/articles' element={<Articles/>} /> */}
             <Route path='/contact' element={<Contact/>} />
             <Route path='/project' element={<Projects/>} />
-            <Route path='/service' element={<Services/>} />
             <Route path='*' element={<Error/>} />
           </Routes>
       </Router>

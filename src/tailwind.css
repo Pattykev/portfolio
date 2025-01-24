@@ -11,24 +11,20 @@
 
 body main{
     
-    font-family:  'young-serif'; /* Police de base */
+    font-family:  'outfit'; /* Police de base */
     line-height: 1.6; /* Hauteur de ligne */
     margin-top: 4rem; /* Marges par défaut */
     padding: 2rem 5rem; /* Espacement interne */
 }
-
-/* Styles pour les liens */
-a {
-    color: #084872; /* Couleur des liens */
-    text-decoration: none; /* Pas de soulignement */
-    text-align: center;
-    padding: auto;
+body nav{
+    
+    font-family:  'outfit'; /* Police de base */
 }
-a:hover{
-    font-weight: bold;
-    color: black;
-
+body h1, h2{
+    
+    font-family:  'young-serif'; /* Police de base */
 }
+
 
 button{
     border-radius: 20px;
@@ -37,6 +33,27 @@ button{
     padding: 10px;
     display: block;
     margin: 10px auto; /* Centre horizontalement */
+}
+
+/* 🌞 Style clair */
+[data-theme="light"] {
+	--bg-color: white;
+	--text-color: #212121;
+}
+
+/* 🌚 Style sombre */
+[data-theme="dark"] {
+	--bg-color: #212121;
+	--text-color: #ececec;
+    --link-color: white;
+}
+
+html {
+	background-color: var(--bg-color);
+	color: var(--text-color);
+    nav {
+        color: var(--link-color);
+    }
 }
 
 
