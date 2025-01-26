@@ -8,20 +8,22 @@
         margin-right: 0;
         padding-right: 0;
     }
-    .container-contact .divForm{
-        width: 30rem;
-        font-size: 12px;
-        margin-right: 20rem;
-        display: flex;                  /* Active le modèle Flexbox */
-        flex-direction: column;        /* Change la direction des éléments en colonne */
-        align-items: center;           /* Centre les éléments horizontalement */
-        justify-content: center;
-    }
-    .container-contact .divForm form {
-        width: 15rem;
-    }
-    .container-contact .divForm form input{
-        width: 5rem;
-    }
 
-  }
+
+
+
+/* Conteneur principal */
+.divForm form{
+    width: 15rem;
+    justify-content: center;
+    align-items: center;
+    margin-right: 4rem;
+}
+.divForm{
+    margin: 0;
+    margin-left: -4rem;
+}
+
+
+
+}

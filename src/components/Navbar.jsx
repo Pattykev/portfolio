@@ -2,21 +2,24 @@ import React, {useState} from "react";
 import { Link, NavLink } from "react-router-dom"; // Use curly braces to import Link
 import "../css/NavBar.css";
 
+ const [toggleMenu, setToggleMenu] = useState(false);
+  const handleNavbar = ()=> setToggleMenu(!toggleMenu);
+
 
 const Navbar = () => {
  
     return (
       <nav className="flex -mt-1 top-0 left-0 w-full p-4 ">
         <div className=" container justify-center mx-auto py-4 border-2 border-teal-400 flex shadow w-2/5 rounded-full">
-          
+       
 
-        <div  >
+       <div className={toggleMenu ? "navbar-collapse show-navbar-collapse" : "navbar-collapse"}>
             <ul className="flex space-x-8">
-                <li ><NavLink  className="text-black link-list hover:text-teal-400 " style={({ isActive }) =>({color: isActive ? 'teal' : 'black'})}  to="/">Home</NavLink></li>
-                <li ><NavLink className="text-black link-list hover:text-teal-400" style={({ isActive }) =>({color: isActive ? 'teal' : 'black'})} to="/about">About</NavLink></li>
-                <li ><NavLink className="text-black link-list hover:text-teal-400" style={({ isActive }) =>({color: isActive ? 'teal' : 'black'})} to="/project">Project</NavLink></li>
+                <li className="nav-item" ><NavLink  className="text-black link-list hover:text-teal-400 " style={({ isActive }) =>({color: isActive ? 'teal' : 'black'})}  to="/">Home</NavLink></li>
+                <li className="nav-item" ><NavLink className="text-black link-list hover:text-teal-400" style={({ isActive }) =>({color: isActive ? 'teal' : 'black'})} to="/about">About</NavLink></li>
+                <li className="nav-item"><NavLink className="text-black link-list hover:text-teal-400" style={({ isActive }) =>({color: isActive ? 'teal' : 'black'})} to="/project">Project</NavLink></li>
                 {/* <li ><Link className="text-black link-list hover:text-indigo-600" to="/Articles">Articles</Link></li> */}
-                <li ><NavLink className="text-black link-list hover:text-teal-400" style={({ isActive }) =>({color: isActive ? 'teal' : 'black'})} to="/contact">Contact</NavLink></li>
+                <li className="nav-item" ><NavLink className="text-black link-list hover:text-teal-400" style={({ isActive }) =>({color: isActive ? 'teal' : 'black'})} to="/contact">Contact</NavLink></li>
             </ul>
             </div> 
 

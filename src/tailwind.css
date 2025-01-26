@@ -58,6 +58,7 @@ html {
 @media (max-width: 800px) {
     body main{
         font-size: 12px;
+        margin-top: 2rem;
     }
     h1{
         font-size: 16px;

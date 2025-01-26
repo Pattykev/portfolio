@@ -34,7 +34,7 @@ function Contact() {
 
             </div>
             <h1 className="p-6 mt-12 mb-10 text-center text-[28px]">Send me a private message </h1>
-            <div className="divForm flex items-center justify-center min-h-screen bg-gray-100 rounded-lg">
+            <div className="divForm  bg-gray-100 rounded-lg">
                 <form id="contact-form" action="mailto:patricia.tchingue@gmail.com" className="bg-white p-8 rounded-lg shadow-md w-100" method="post">
                     <label className="block text-sm font-medium text-gray-700">Your email adress</label>
                     <input name="email" className="mb-4 block w-full p-2 border border-gray-300 rounded-md focus:outline-none focus:ring focus:ring-blue-500" type="text" title="Write your email adress here!"/>
