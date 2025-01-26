@@ -2,8 +2,7 @@ import React, {useState} from "react";
 import { Link, NavLink } from "react-router-dom"; // Use curly braces to import Link
 import "../css/NavBar.css";
 
- const [toggleMenu, setToggleMenu] = useState(false);
-  const handleNavbar = ()=> setToggleMenu(!toggleMenu);
+
 
 
 const Navbar = () => {
@@ -13,7 +12,7 @@ const Navbar = () => {
         <div className=" container justify-center mx-auto py-4 border-2 border-teal-400 flex shadow w-2/5 rounded-full">
        
 
-       <div className={toggleMenu ? "navbar-collapse show-navbar-collapse" : "navbar-collapse"}>
+       <div >
             <ul className="flex space-x-8">
                 <li className="nav-item" ><NavLink  className="text-black link-list hover:text-teal-400 " style={({ isActive }) =>({color: isActive ? 'teal' : 'black'})}  to="/">Home</NavLink></li>
                 <li className="nav-item" ><NavLink className="text-black link-list hover:text-teal-400" style={({ isActive }) =>({color: isActive ? 'teal' : 'black'})} to="/about">About</NavLink></li>
