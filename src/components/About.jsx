@@ -1,15 +1,30 @@
 import React from "react";
 import imageSource from "/src/assets/profile-top.png";
 import { FaCss3, FaHtml5, FaJs, FaNodeJs, FaReact, FaStar, FaJava, FaAngular, FaFire, FaLaptop, FaHandHolding, FaNetworkWired, FaPhone, FaGlasses} from "react-icons/fa";
+import "../css/About.css";
 
 function About() {
 	const imageStyle={
 		"margin":"5rem 4rem"
 	}
+	const handleDownload = () => {
+		 // Create a link element
+		 const link = document.createElement('a');
+		 // Set the href to your server route
+		 link.href = '/download'; // Update this to your server route
+		 // Set the download attribute
+		 link.setAttribute('download', 'Patricia-TCHINGUE.pdf');
+		 // Append the link to the body
+		 document.body.appendChild(link);
+		 // Trigger the download by simulating a click
+		 link.click();
+		 // Clean up and remove the link
+		 document.body.removeChild(link);
+	  };
 	return(
 		< > 
 		<main style={imageStyle} className="justify-center">
-      	<div className="grid grid-rows-1 grid-flow-col gap-4 justify-center"  > 
+      	<div className="container-about grid grid-rows-1 grid-flow-col gap-4 justify-center"  > 
 				<img src={imageSource} alt="Patricia's image" className=" rounded-full" />
             <div className="w-190 mt-25 text-justify">
 					<h1 className="p-8 text-center text-[28px]">Patricia Kevine TCHINGUE MAKAMTE, FullStack Developer, Nappy Ambassador</h1>
@@ -20,12 +35,10 @@ function About() {
 						<br/>
 						🚀 A hard worker, I firmly believe that passion and commitment are the keys to success. My goal? To inspire others to embrace their potential and never stop exploring. Whether in the heart of coding or in the art of cosmetics, I am determined to leave my mark.
 					</p>
-					<a href="../assets/TCHINGUE MAKAMTE Patricia Kevine.pdf" download="CV-Patricia TCHINGUE.pdf" target="blank">
-    					<button className="p-2 w-2/5 bg-teal-800 text-white hover:bg-teal-600 mt-8" >Download Resume</button>
-					</a>
+    				<button onClick={handleDownload} className="p-2 w-2/5 bg-teal-800 text-white hover:bg-teal-600 mt-8" >Download Resume</button>
 					<div >
     					<h1 className="p-8 text-center text-[28px]">Programming languages and frameworks</h1>
-    					<div className=" text-center bg-gray-200 grid grid-rows-2 grid-flow-col gap-4 text-gray-800 rounded-lg p-8"> 
+    					<div className="language text-center bg-gray-200 grid grid-rows-2 grid-flow-col gap-2 text-gray-800 rounded-lg p-6"> 
         					<span><FaJs className="inline-flex mr-4" color="teal" size={18}/>JavaScript</span>
         					<span><FaStar className="inline-flex mr-4" color="teal" size={18} />TypeScript</span>
         					<span><FaJava className="inline-flex mr-4" color="teal" size={18}/>Java</span>
@@ -41,7 +54,7 @@ function About() {
 
 					<div >
     					<h1 className="p-8 text-center text-[28px]">Services</h1>
-    					<div className=" bg-gray-200 grid grid-rows-4 grid-flow-col gap-10 text-gray-800 rounded-lg p-8">
+    					<div className="service bg-gray-200 grid grid-rows-4 grid-flow-col gap-10 text-gray-800 rounded-lg p-8">
         					<span> <FaFire className="inline-flex mr-4" color="orange" size={18}/>Website development (family biography, business, portfolio)</span>
         					<span> <FaLaptop className="inline-flex mr-4" color="orange" size={18}/> Complete web application development to automate the management of your box</span>
         					<span> <FaHandHolding className="inline-flex mr-4" color="orange" size={18}/> Collaboration on projects</span>

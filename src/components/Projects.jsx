@@ -1,4 +1,5 @@
 import React from "react";
+import "../css/Projects.css";
 
 function Projects() {
     const projectStyle = {
@@ -8,7 +9,7 @@ function Projects() {
 		"margin":"5rem 4rem"
 	}
     return(
-        <main style={imageStyle} className="justify-center">
+        <main style={imageStyle} className="container-project justify-center">
         <h1 className="p-8 text-center text-[28px]">My open source projects</h1>
         <div className="grid grid-rows-2 grid-flow-col text-justify gap-10"> 
             <div className="bg-gray-190 rounded-lg text-gray-600" style={projectStyle}> 

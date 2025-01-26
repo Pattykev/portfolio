@@ -1,0 +1,41 @@
+@media (max-width: 800px) {
+    .container-about div {
+        width: 20rem;
+        padding: 1rem 1rem;
+        margin-right: 1rem;
+        margin-left: -1rem;
+    }
+    .container-about h1{
+        font-size: 16px;
+        margin-left: 2rem ;
+    }
+    .container-about .language{
+        gap: 1rem;
+        padding: 0.5rem 0.5rem;
+        font-size: 10px;
+        margin-left: -0.5rem ;
+        margin-right: 2.5rem;
+        width: 20rem;
+        
+
+    }
+   .container-about .language span{
+        margin-right: 0;
+    }
+    .container-about .service{
+        gap: 1rem;
+        padding: 0.5rem 0.5rem;
+        font-size: 10px;
+        margin-left: -0.5rem ;
+        margin-right: 2.5rem;
+        width: 20rem;
+       
+    }
+   .container-about .service span{
+        margin-right: 0;
+    }
+   
+    .container-about div button{
+        font-size: 10px;
+    }
+}

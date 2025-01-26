@@ -1,25 +1,22 @@
 import React, {useState} from "react";
-import { Link } from "react-router-dom"; // Use curly braces to import Link
+import { Link, NavLink } from "react-router-dom"; // Use curly braces to import Link
+import "../css/NavBar.css";
 
 
 const Navbar = () => {
-    const [isOpen, setIsOpen] = useState(false);
-
-  const toggleMenu = () => {
-    setIsOpen(!isOpen);
-  };
+ 
     return (
       <nav className="flex -mt-1 top-0 left-0 w-full p-4 ">
         <div className=" container justify-center mx-auto py-4 border-2 border-teal-400 flex shadow w-2/5 rounded-full">
           
 
-        <div className={`md:flex ${isOpen ? 'block' : 'hidden'}`} >
+        <div  >
             <ul className="flex space-x-8">
-                <li ><Link className="text-black link-list hover:text-teal-400 active:text-teal-300" to="/">Home</Link></li>
-                <li ><Link className="text-black link-list hover:text-teal-400" to="/about">About</Link></li>
-                <li ><Link className="text-black link-list hover:text-teal-400" to="/project">Project</Link></li>
+                <li ><NavLink  className="text-black link-list hover:text-teal-400 " style={({ isActive }) =>({color: isActive ? 'teal' : 'black'})}  to="/">Home</NavLink></li>
+                <li ><NavLink className="text-black link-list hover:text-teal-400" style={({ isActive }) =>({color: isActive ? 'teal' : 'black'})} to="/about">About</NavLink></li>
+                <li ><NavLink className="text-black link-list hover:text-teal-400" style={({ isActive }) =>({color: isActive ? 'teal' : 'black'})} to="/project">Project</NavLink></li>
                 {/* <li ><Link className="text-black link-list hover:text-indigo-600" to="/Articles">Articles</Link></li> */}
-                <li ><Link className="text-black link-list hover:text-teal-400" to="/contact">Contact</Link></li>
+                <li ><NavLink className="text-black link-list hover:text-teal-400" style={({ isActive }) =>({color: isActive ? 'teal' : 'black'})} to="/contact">Contact</NavLink></li>
             </ul>
             </div> 
 

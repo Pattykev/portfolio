@@ -55,5 +55,12 @@ html {
         color: var(--link-color);
     }
 }
-
+@media (max-width: 800px) {
+    body main{
+        font-size: 12px;
+    }
+    h1{
+        font-size: 16px;
+    }
+}
 
