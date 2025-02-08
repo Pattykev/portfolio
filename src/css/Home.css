@@ -8,6 +8,7 @@
     .container div{
         margin-left: 2rem;
         margin-right: 4rem;
+        margin-top: 1rem;
         width: 20rem;
     }
     .container div .subTitle{

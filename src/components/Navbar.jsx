@@ -9,7 +9,7 @@ const Navbar = () => {
  
     return (
       <nav className="flex -mt-1 top-0 left-0 w-full p-4 ">
-        <div className=" container justify-center mx-auto py-4 border-2 border-teal-400 flex shadow w-2/5 rounded-full">
+        <div className=" container-nav justify-center mx-auto py-4 border-2 border-teal-400 flex shadow w-2/5 rounded-full">
        
 
        <div >
