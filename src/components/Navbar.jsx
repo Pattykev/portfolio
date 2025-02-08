@@ -14,11 +14,11 @@ const Navbar = () => {
 
        <div >
             <ul className="flex space-x-8">
-                <li className="nav-item" ><NavLink  className="text-black link-list hover:text-teal-400 " style={({ isActive }) =>({color: isActive ? 'teal' : 'black'})}  to="/">Home</NavLink></li>
-                <li className="nav-item" ><NavLink className="text-black link-list hover:text-teal-400" style={({ isActive }) =>({color: isActive ? 'teal' : 'black'})} to="/about">About</NavLink></li>
-                <li className="nav-item"><NavLink className="text-black link-list hover:text-teal-400" style={({ isActive }) =>({color: isActive ? 'teal' : 'black'})} to="/project">Project</NavLink></li>
+                <li className="nav-item" ><NavLink  className="text-black link-list hover:text-teal-400 " style={({ isActive }) =>({color: isActive ? 'teal' : ""})}  to="/">Home</NavLink></li>
+                <li className="nav-item" ><NavLink className="text-black link-list hover:text-teal-400" style={({ isActive }) =>({color: isActive ? 'teal' : ""})} to="/about">About</NavLink></li>
+                <li className="nav-item"><NavLink className="text-black link-list hover:text-teal-400" style={({ isActive }) =>({color: isActive ? 'teal' : ""})} to="/project">Project</NavLink></li>
                 {/* <li ><Link className="text-black link-list hover:text-indigo-600" to="/Articles">Articles</Link></li> */}
-                <li className="nav-item" ><NavLink className="text-black link-list hover:text-teal-400" style={({ isActive }) =>({color: isActive ? 'teal' : 'black'})} to="/contact">Contact</NavLink></li>
+                <li className="nav-item" ><NavLink className="text-black link-list hover:text-teal-400" style={({ isActive }) =>({color: isActive ? 'teal' : ""})} to="/contact">Contact</NavLink></li>
             </ul>
             </div> 
 
