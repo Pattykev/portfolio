@@ -23,8 +23,9 @@ function App() {
             <Route path='/project' element={<Projects/>} />
             <Route path='*' element={<Error/>} />
           </Routes>
+          <Footer />
       </Router>
-      <Footer />
+      
     </>
       
   )

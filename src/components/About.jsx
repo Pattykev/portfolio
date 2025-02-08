@@ -37,8 +37,8 @@ function About() {
 					</p>
     				<button onClick={handleDownload} className="p-2 w-2/5 bg-teal-800 text-white hover:bg-teal-600 mt-8" >Download Resume</button>
 					<div >
-    					<h1 className="p-8 text-center text-[28px]">Programming languages and frameworks</h1>
-    					<div className="language text-center bg-gray-200 grid grid-rows-2 grid-flow-col gap-2 text-gray-800 rounded-lg p-6"> 
+    					<h2 className="p-8 text-center text-[28px]">Programming languages and frameworks</h2>
+    					<div className="language text-center bg-teal-200 grid grid-rows-2 grid-flow-col gap-2 text-gray-800 rounded-lg p-6"> 
         					<span><FaJs className="inline-flex mr-4" color="teal" size={18}/>JavaScript</span>
         					<span><FaStar className="inline-flex mr-4" color="teal" size={18} />TypeScript</span>
         					<span><FaJava className="inline-flex mr-4" color="teal" size={18}/>Java</span>
@@ -53,8 +53,8 @@ function About() {
 					</div>
 
 					<div >
-    					<h1 className="p-8 text-center text-[28px]">Services</h1>
-    					<div className="service bg-gray-200 grid grid-rows-4 grid-flow-col gap-10 text-gray-800 rounded-lg p-8">
+    					<h2 className="p-8 text-center text-[28px]">Services</h2>
+    					<div className="service bg-teal-200 grid grid-rows-4 grid-flow-col gap-10 text-gray-800 rounded-lg p-8">
         					<span> <FaFire className="inline-flex mr-4" color="orange" size={18}/>Website development (family biography, business, portfolio)</span>
         					<span> <FaLaptop className="inline-flex mr-4" color="orange" size={18}/> Complete web application development to automate the management of your box</span>
         					<span> <FaHandHolding className="inline-flex mr-4" color="orange" size={18}/> Collaboration on projects</span>

@@ -33,7 +33,7 @@ function Contact() {
                 </div>
 
             </div>
-            <h1 className="p-6 mt-12 mb-10 text-center text-[28px]">Send me a private message </h1>
+            <h2 className="p-6 mt-12 mb-10 text-center text-[28px]">Send me a private message </h2>
             <div className="divForm  bg-gray-100 rounded-lg">
                 <form id="contact-form" action="mailto:patricia.tchingue@gmail.com" className="bg-white p-8 rounded-lg shadow-md w-100" method="post">
                     <label className="block text-sm font-medium text-gray-700">Your email adress</label>

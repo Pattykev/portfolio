@@ -15,7 +15,7 @@ function Home() {
     <main>
       <div className="container flex mx-auto justify-center"> 
         <img className="rounded-full border-1 border-gray-400 w-35"  src={img} alt="profile image" />
-        <div style={horizontalMargin} className="mb-15" >
+        <div style={horizontalMargin}  >
           <h1 className="text-[28px] mb-4">Hi! I'm Patricia Kevine aka PattyKev <span className="inline-flex"><FaHandshake color="teal" size={25} /></span> </h1>
           <br/>
           <p className="subTitle text-[20px]"> <span>💼</span> I'm a Freelance FullStack Developer and Nappy Ambassador</p>

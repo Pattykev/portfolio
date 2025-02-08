@@ -57,11 +57,11 @@ html {
 }
 @media (max-width: 800px) {
     body main{
-        font-size: 12px;
+        font-size: 14px;
         margin-top: 1rem;
     }
     h1{
-        font-size: 16px;
+        font-size: 24px;
     }
 }
 
