@@ -12,22 +12,22 @@ function Contact() {
                 <h1 className="p-8 text-center text-[28px]">Follow me on</h1>
                 <div className="flex justify-center space-x-10" >  
                     <div className="flex flex-col items-center">
-                        <a href="https://www.linkedin.com/in/patriciatchingue/" target="blank" title="Click me" className="hover:animate-bounce"><FaLinkedin size={28}  color="teal"/></a>
+                        <a href="https://www.linkedin.com/in/patriciatchingue/" target="blank" title="Click me" className="hover:animate-bounce"><FaLinkedin size={25}  color="teal"/></a>
                         <p className="text-sm" >Linkedin</p>
                     </div>
 
                     <div className="flex flex-col items-center">
-                        <a href="https://x.com/KevineTchingue" target="blank" title="Click me" className="hover:animate-bounce"> <FaTwitter size={28} color="teal" /></a>
+                        <a href="https://x.com/KevineTchingue" target="blank" title="Click me" className="hover:animate-bounce"> <FaTwitter size={25} color="teal" /></a>
                         <p className="text-sm">Twitter</p>
                     </div>
 
                     <div className="flex flex-col items-center">
-                        <a href="mailto:patricia.tchingue@gmail.com" target="blank" title="Click me" className="hover:animate-bounce"> <FaEnvelope size={28} color="teal" />  </a>
+                        <a href="mailto:patricia.tchingue@gmail.com" target="blank" title="Click me" className="hover:animate-bounce"> <FaEnvelope size={25} color="teal" />  </a>
                         <p className="text-sm">Gmail</p>
                     </div>
 
                     <div className="flex flex-col items-center">
-                        <a href="https://wa.me/+237697887157" target="blank" title="Click me" className="hover:animate-bounce"> <FaPhone size={28} color="teal" /> </a>
+                        <a href="https://wa.me/+237697887157" target="blank" title="Click me" className="hover:animate-bounce"> <FaPhone size={25} color="teal" /> </a>
                         <p className="text-sm">Phone</p>
                     </div>
                 </div>
