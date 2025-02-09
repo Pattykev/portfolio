@@ -5,6 +5,12 @@
 
 }
 
+@media (min-width: 800px) {
+    .navbar-toggler-btn{
+        display: none;
+    
+    }
+}
 
 
 @media (max-width: 800px) {
