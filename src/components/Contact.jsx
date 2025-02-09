@@ -10,7 +10,7 @@ function Contact() {
         <main style={imageStyle} className="container-contact justify-center" >
             <div> 
                 <h1 className="p-8 text-center text-[28px]">Follow me on</h1>
-                <div className="flex justify-center space-x-10" >  
+                <div className="icon flex justify-center space-x-10" >  
                     <div className="flex flex-col items-center">
                         <a href="https://www.linkedin.com/in/patriciatchingue/" target="blank" title="Click me" className="hover:animate-bounce"><FaLinkedin size={25}  color="teal"/></a>
                         <p className="text-sm" >Linkedin</p>
